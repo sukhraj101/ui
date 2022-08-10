@@ -17,7 +17,11 @@ ul[role='list'], ol[role='list'] {list-style: none;}
 html:focus-within {scroll-behavior: smooth;}
 
 /* Set core body defaults */
-body {min-height: 100vh;text-rendering: optimizeSpeed;line-height: 1.2;background-color: #fafafa;}
+body {min-height: 100vh;text-rendering: optimizeSpeed;line-height: 1.2;background-color: #fafafa;overflow-y: scroll;}
+
+body::-webkit-scrollbar {
+	width: 0;
+}
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {text-decoration-skip-ink: auto;}
@@ -46,7 +50,6 @@ input, button, textarea, select {font: inherit;}
 	margin: auto;
 	inset: 0;
 	isolation: isolate;
-	max-width: 560px;
 	overflow: hidden;
 	background-color: #ffffff;
 	position: relative;
@@ -128,10 +131,12 @@ input, button, textarea, select {font: inherit;}
 /* /common styles end */
 
 header {
-	z-index: 1;
-	padding: 11px 0;
-	position: relative;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+	position: fixed;
+    z-index: 1;
+    padding: 11px 0;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 5%);
+    background: #fff;
+    width: 100%;
 }
 
 .header-assets {
@@ -162,14 +167,8 @@ header {
 
 /* .content start */
 .content {
-	padding: 13px 0 45px;
+	padding: 73px 0 45px;
 	overflow: hidden;
-	overflow-y: scroll;
-    max-height: 91vh;
-}
-
-.content::-webkit-scrollbar {
-	width: 0;
 }
 
 /* .slider start */
@@ -179,6 +178,11 @@ header {
 }
 
 .slider__slide {
+	width: 100%;
+	display: block;
+}
+
+.slider__slide img {
 	width: 100%;
 	display: block;
 }
@@ -314,7 +318,7 @@ header {
 /* . footer start */
 footer {
 	min-height: 60px;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
