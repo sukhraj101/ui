@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="preload stylesheet" href="./assets/css/fonts.css" as="style">
     <link rel="preload stylesheet" href="./assets/css/style.css" as="style">
     <title>Home</title>
@@ -195,7 +196,7 @@
             </ul>
         </footer>
 
-        <!-- <div class="drawer">
+        <div class="drawer">
             <div class="container">
                 <h2 class="sec-heading">Heading</h2>
                 <fieldset>
@@ -210,83 +211,55 @@
                 </fieldset>
 
                 <div class="method__selector">
-
+                    <div class="method__options">
+                        <button></button>
+                        <div class="method__screen">
+                            <img src="./assets/img/net-banking.svg" alt="net banking icon" />
+                        </div>
+                        <button></button>
+                    </div>
                 </div>
 
-                <style>
-                    .method__selector {
-                        background: linear-gradient(89.78deg, #CBDADA -0.65%, #FFFFFF 46%, #CBDADA 101.92%);
-                        width: calc(100% + 24px);
-                        margin-left: -12px;
-                        height: 50px;
-                    }
-                </style>
+                <div class="payment__info">
+                    <div class="payment__text">Enter deposit amount ( <span class="symbol">₹</span><span class="payment__amt_min">2</span> - <span class="symbol">₹</span><span class="payment__amt_max">10,00,000</span> ) :</div>
+                    <input type="text" class="payment__input" id="amount" value="₹ 0.00" />
+                    <div id="slider-range"></div>
+                    <ul class="prices-list">
+                        <li>500</li>
+                        <li>1000</li>
+                        <li>1500</li>
+                        <li>2000</li>
+                    </ul>
+                    <div class="payment_cta">
+                        <a href="#!" class="payment_apply">
+                            <img src="./assets/img/deposit-icon.svg" alt="deposit icon" />
+                            <span>Apply Coupon</span>
+                        </a>
+                        <a href="#!" class="payment_deposit">
+                            <img src="./assets/img/deposit-icon.svg" alt="deposit icon" />
+                            <span>Deposit</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div> -->
-        <style>
-            .drawer {
-                display: none;
-                position: absolute;
-                background-color: #ffffff;
-                border-top-left-radius: 16px;
-                border-top-right-radius: 16px;
-                min-height: 203px;
-                bottom: 0;
-                width: 100%;
-                z-index: 99;
-                padding-top: 19px;
-            }
-            .drawer:before {
-                position: absolute;
-                content: '';
-                background: #EFF2F4;
-                border-radius: 10px;
-                width: 70.5px;
-                height: 3px;
-                top: 8px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            .drawer .sec-heading {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 13px;
-                line-height: 26px;
-                text-align: center;
-                color: #1A212C;
-                margin-bottom: 8px;
-            }
-            .drawer fieldset {
-                border: 1px solid var(--color-primary);
-                border-radius: 25px;
-                display: flex;
-                padding: 0;
-                overflow: hidden;
-                margin-bottom: 8px;
-            }
-            .drawer fieldset > * {
-                flex: 1 0 50%;
-            }
-            .drawer fieldset > label input {
-                opacity: 0;
-                pointer-events: none;
-                position: absolute;
-            }
-            .drawer fieldset > label input ~ span {
-                border-radius: 25px;
-                min-height: 40px;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-            }
-            .drawer fieldset > label input:checked ~ span {
-                color: #ffffff;
-                background-color: var(--color-primary);
-            }
-        </style>
+        </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#slider-range" ).slider({
+            range: true,
+            min: 500,
+            max: 2000,
+            values: [ 1000, 2000 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "₹" + ui.values[ 0 ]);
+            }
+            });
+            $( "#amount" ).val( "₹" + $( "#slider-range" ).slider( "values", 0 ));
+        } );
+    </script>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>

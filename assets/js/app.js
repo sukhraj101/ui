@@ -1,4 +1,4 @@
-// event delegation for footer menu items click.
+// event for footer menu items click.
 var menuItems = document.querySelectorAll('.f__menu__item');
 menuItems.forEach( item => {
     item.addEventListener('click', function() {
@@ -11,8 +11,11 @@ menuItems.forEach( item => {
     });
 });
 
+
+var drawer = document.querySelector('.drawer');
+
 function addmoney() {
-    alert()
+    drawer.classList.add('active');
 }
 
 document.addEventListener('touchstart', handleTouchStart, false);        
@@ -22,8 +25,7 @@ var xDown = null;
 var yDown = null;
 
 function getTouches(evt) {
-  return evt.touches ||             // browser API
-         evt.originalEvent.touches; // jQuery
+  return evt.touches || evt.originalEvent.touches;
 }                                                     
                                                                          
 function handleTouchStart(evt) {
@@ -54,6 +56,9 @@ function handleTouchMove(evt) {
             /* down swipe */ 
         } else { 
             /* up swipe */
+            if(drawer.classList.contains('active')) {
+                drawer.classList.remove('active');
+            }
         }                                                                 
     }
     /* reset values */
