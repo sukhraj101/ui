@@ -17,7 +17,7 @@ ul[role='list'], ol[role='list'] {list-style: none;}
 html:focus-within {scroll-behavior: smooth;}
 
 /* Set core body defaults */
-body {min-height: 100vh;text-rendering: optimizeSpeed;line-height: 1.2;}
+body {min-height: 100vh;text-rendering: optimizeSpeed;line-height: 1.2;background-color: #fafafa;}
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {text-decoration-skip-ink: auto;}
@@ -46,7 +46,7 @@ input, button, textarea, select {font: inherit;}
 	margin: auto;
 	inset: 0;
 	isolation: isolate;
-	max-width: 360px;
+	max-width: 560px;
 	overflow: hidden;
 	background-color: #ffffff;
 	position: relative;
@@ -163,9 +163,9 @@ header {
 /* .content start */
 .content {
 	padding: 13px 0 45px;
-	max-height: 530px;
 	overflow: hidden;
 	overflow-y: scroll;
+    max-height: 91vh;
 }
 
 .content::-webkit-scrollbar {
@@ -470,7 +470,5 @@ footer {
 /* /footer end */
 
 /* @media queries start */
-@media (min-width: 768px) {
-    body {background-color: #fafafa;padding-top: 50px;}
-}
+
 /* @media queries end */

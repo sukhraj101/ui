@@ -179,7 +179,7 @@
             </ul>
         </footer>
 
-        <div class="drawer">
+        <!-- <div class="drawer">
             <div class="container">
                 <h2 class="sec-heading">Heading</h2>
                 <fieldset>
@@ -205,41 +205,8 @@
                         height: 50px;
                     }
                 </style>
-
-
-                <style>
-                    .drawer fieldset {
-                        border: 1px solid var(--color-primary);
-                        border-radius: 25px;
-                        display: flex;
-                        padding: 0;
-                        overflow: hidden;
-                        margin-bottom: 8px;
-                    }
-                    .drawer fieldset > * {
-                        flex: 1 0 50%;
-                    }
-                    .drawer fieldset > label input {
-                        opacity: 0;
-                        pointer-events: none;
-                        position: absolute;
-                    }
-                    .drawer fieldset > label input ~ span {
-                        border-radius: 25px;
-                        min-height: 40px;
-                        text-align: center;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        cursor: pointer;
-                    }
-                    .drawer fieldset > label input:checked ~ span {
-                        color: #ffffff;
-                        background-color: var(--color-primary);
-                    }
-                </style>
             </div>
-        </div>
+        </div> -->
         <style>
             .drawer {
                 position: absolute;
@@ -271,6 +238,35 @@
                 text-align: center;
                 color: #1A212C;
                 margin-bottom: 8px;
+            }
+            .drawer fieldset {
+                border: 1px solid var(--color-primary);
+                border-radius: 25px;
+                display: flex;
+                padding: 0;
+                overflow: hidden;
+                margin-bottom: 8px;
+            }
+            .drawer fieldset > * {
+                flex: 1 0 50%;
+            }
+            .drawer fieldset > label input {
+                opacity: 0;
+                pointer-events: none;
+                position: absolute;
+            }
+            .drawer fieldset > label input ~ span {
+                border-radius: 25px;
+                min-height: 40px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .drawer fieldset > label input:checked ~ span {
+                color: #ffffff;
+                background-color: var(--color-primary);
             }
         </style>
 
