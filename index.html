@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload stylesheet" href="./assets/css/fonts.css" as="style">
+    <link rel="preload stylesheet" href="./assets/css/style.css" as="style">
     <title>Home</title>
 </head>
 <body class="constrained-width">
@@ -62,6 +62,12 @@
                             <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-2.jpg" alt="article" /></a></article>
                             <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-1.jpg" alt="article" /></a></article>
                             <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-2.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-1.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-2.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-1.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-2.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-1.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-2.jpg" alt="article" /></a></article>
                         </div>
                     </div>
                 </section>
@@ -72,6 +78,12 @@
                     <h2 class="sec-heading">Games</h2>
                     <div class="article__slider scroll__touch">
                         <div class="article__slider__items d__flex">
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-1.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-2.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-1.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-2.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-1.jpg" alt="article" /></a></article>
+                            <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-2.jpg" alt="article" /></a></article>
                             <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-1.jpg" alt="article" /></a></article>
                             <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-2.jpg" alt="article" /></a></article>
                             <article class="article__slider__item"><a href="#!" target="_self" title="Article"><img src="./assets/img/article-1.jpg" alt="article" /></a></article>
@@ -95,32 +107,33 @@
                         <p class="f__menu_name">Menu</p>
                     </a>
                 </li>
+                <li class="blank"></li>
                 <li>
                     <a href="#!" class="f__menu__item">
                         <span class="f__menu__icon"><img src="./assets/img/casnio-icon.svg" /></span>
                         <p class="f__menu_name">Menu</p>
                     </a>
                 </li>
+                <li class="blank"></li>
                 <li>
                     <a href="#!" class="f__menu__item">
                         <span class="f__menu__icon"><img src="./assets/img/bank-icon.svg" /></span>
                         <p class="f__menu_name">Menu</p>
                     </a>
-
                     <div class="f__sub__menu">
                         <svg xmlns="http://www.w3.org/2000/svg" width="221" height="168" viewBox="0 0 221 168" fill="none">
                             <path d="M210.755 118C210.755 103.817 209.576 89.6032 204.5 76.5C199.5 63 192.879 52.0287 183.5 42C174.5 32.5 161.905 23.6485 149.651 18.221C137.397 12.7935 124.264 10.5 111 10.5C97.5 10.5 84.5 13 72.5 18C60.1511 22.779 47.3787 31.4713 38 41.5C28.6213 51.5287 21 63.5 16.5 76.5C11.4243 89.6032 10.5 103.817 10.5 118H111H210.755Z" fill="white"/>
-                            <a href="#!" onclick="addmoney()">
-                                <g filter="url(#filter0_d_425_1453)">
+                            <g filter="url(#filter0_d_425_1453)">
+                                <path d="M141.934 67.9925C140.999 67.3191 140.79 66.006 141.494 65.0943L167.852 30.9483C168.512 30.0932 169.734 29.9153 170.597 30.5651C194.334 48.4395 209.855 76.6431 210.48 108.498C210.502 109.602 209.605 110.5 208.5 110.5H169.947C168.843 110.5 167.953 109.603 167.892 108.5C166.974 91.8959 154.778 77.2494 141.934 67.9925Z" fill="white"/>
+                                <path d="M12.5 110.5C11.3954 110.5 10.498 109.602 10.5196 108.498C11.114 78.234 25.1529 51.2653 46.9102 33.3186C47.7696 32.6097 49.0413 32.7668 49.7221 33.6487L76.1062 67.828C76.7704 68.6885 76.6257 69.9191 75.7948 70.6201C64.7927 79.9019 54 93.3903 53.1115 108.5C53.0467 109.603 52.1571 110.5 51.0526 110.5H12.5Z" fill="white"/>
+                                <a href="#!" onclick="addmoney()">
+                                    <g>
                                     <path d="M162.112 27.3493C162.799 26.4112 162.544 25.0859 161.545 24.4917C146.603 15.6043 129.148 10.5 110.5 10.5C90.225 10.5 71.3592 16.5336 55.6006 26.9034C54.6589 27.5231 54.4425 28.8047 55.1081 29.7146L80.6414 64.6152C81.268 65.4717 82.4525 65.6861 83.3627 65.1403C91.295 60.3844 100.578 57.6503 110.5 57.6503C118.882 57.6503 126.808 59.602 133.849 63.0749C134.743 63.5157 135.831 63.2711 136.42 62.4669L162.112 27.3493Z" fill="white"/>
-                                    <path d="M141.934 67.9925C140.999 67.3191 140.79 66.006 141.494 65.0943L167.852 30.9483C168.512 30.0932 169.734 29.9153 170.597 30.5651C194.334 48.4395 209.855 76.6431 210.48 108.498C210.502 109.602 209.605 110.5 208.5 110.5H169.947C168.843 110.5 167.953 109.603 167.892 108.5C166.974 91.8959 154.778 77.2494 141.934 67.9925Z" fill="white"/>
-                                    <path d="M12.5 110.5C11.3954 110.5 10.498 109.602 10.5196 108.498C11.114 78.234 25.1529 51.2653 46.9102 33.3186C47.7696 32.6097 49.0413 32.7668 49.7221 33.6487L76.1062 67.828C76.7704 68.6885 76.6257 69.9191 75.7948 70.6201C64.7927 79.9019 54 93.3903 53.1115 108.5C53.0467 109.603 52.1571 110.5 51.0526 110.5H12.5Z" fill="white"/>
-                                </g>
-                            </a>
-                            <g clip-path="url(#clip0_425_1453)">
-                            <ellipse cx="111.8" cy="39.3462" rx="5.86669" ry="6.15387" fill="#0CD0CD"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M110.243 25.5C107.473 25.5 104.528 26.5287 104.528 28.4359V30.7846C104.528 31.1087 104.761 31.3717 105.048 31.3717C105.335 31.3717 105.567 31.1087 105.567 30.7846V30.1727C106.67 30.9584 108.49 31.3717 110.243 31.3717C111.996 31.3717 113.816 30.9584 114.918 30.1727V30.7846C114.918 31.3067 113.862 32.1112 111.865 32.4234C112.701 32.4318 113.5 32.6035 114.235 32.9093C114.483 32.7878 114.713 32.6529 114.918 32.505V33.1333C114.918 33.1666 114.914 33.2009 114.906 33.236C115.279 33.4452 115.631 33.691 115.957 33.9688V28.4359C115.957 26.5287 113.013 25.5 110.243 25.5ZM108.741 33.2102C107.686 32.7725 106.348 32.5459 105.048 32.5459C102.278 32.5459 99.3333 33.5747 99.3333 35.4818V40.1792C99.3333 42.0864 102.278 43.1151 105.048 43.1151C105.44 43.1151 105.835 43.0945 106.225 43.0538C106.01 42.6978 105.824 42.3198 105.673 41.9237C105.47 41.9348 105.262 41.9407 105.048 41.9407C102.194 41.9407 100.372 40.8967 100.372 40.1792V39.5673C101.475 40.3529 103.295 40.7663 105.048 40.7663C105.145 40.7663 105.241 40.765 105.338 40.7625C105.263 40.3825 105.217 39.9911 105.204 39.591C105.152 39.5917 105.1 39.592 105.048 39.592C102.194 39.592 100.372 38.548 100.372 37.8305V37.2187C101.475 38.0043 103.295 38.4177 105.048 38.4177C105.118 38.4177 105.189 38.417 105.259 38.4157C105.311 38.0096 105.397 37.6146 105.513 37.2339C105.361 37.2401 105.206 37.2433 105.048 37.2433C102.194 37.2433 100.372 36.1993 100.372 35.4818C100.372 34.7643 102.194 33.7203 105.048 33.7203C106.02 33.7203 106.872 33.8413 107.573 34.0292C107.932 33.7149 108.323 33.4397 108.741 33.2102ZM110.243 30.1974C107.389 30.1974 105.567 29.1534 105.567 28.4359C105.567 27.7184 107.389 26.6743 110.243 26.6743C113.097 26.6743 114.918 27.7184 114.918 28.4359C114.918 29.1534 113.097 30.1974 110.243 30.1974Z" fill="#5410D4"/>
-                            <path d="M111.8 36.2692V39.3462M111.8 42.4231V39.3462M111.8 39.3462H114.733H108.867" stroke="white" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <ellipse cx="111.8" cy="39.3462" rx="5.86669" ry="6.15387" fill="#0CD0CD"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M110.243 25.5C107.473 25.5 104.528 26.5287 104.528 28.4359V30.7846C104.528 31.1087 104.761 31.3717 105.048 31.3717C105.335 31.3717 105.567 31.1087 105.567 30.7846V30.1727C106.67 30.9584 108.49 31.3717 110.243 31.3717C111.996 31.3717 113.816 30.9584 114.918 30.1727V30.7846C114.918 31.3067 113.862 32.1112 111.865 32.4234C112.701 32.4318 113.5 32.6035 114.235 32.9093C114.483 32.7878 114.713 32.6529 114.918 32.505V33.1333C114.918 33.1666 114.914 33.2009 114.906 33.236C115.279 33.4452 115.631 33.691 115.957 33.9688V28.4359C115.957 26.5287 113.013 25.5 110.243 25.5ZM108.741 33.2102C107.686 32.7725 106.348 32.5459 105.048 32.5459C102.278 32.5459 99.3333 33.5747 99.3333 35.4818V40.1792C99.3333 42.0864 102.278 43.1151 105.048 43.1151C105.44 43.1151 105.835 43.0945 106.225 43.0538C106.01 42.6978 105.824 42.3198 105.673 41.9237C105.47 41.9348 105.262 41.9407 105.048 41.9407C102.194 41.9407 100.372 40.8967 100.372 40.1792V39.5673C101.475 40.3529 103.295 40.7663 105.048 40.7663C105.145 40.7663 105.241 40.765 105.338 40.7625C105.263 40.3825 105.217 39.9911 105.204 39.591C105.152 39.5917 105.1 39.592 105.048 39.592C102.194 39.592 100.372 38.548 100.372 37.8305V37.2187C101.475 38.0043 103.295 38.4177 105.048 38.4177C105.118 38.4177 105.189 38.417 105.259 38.4157C105.311 38.0096 105.397 37.6146 105.513 37.2339C105.361 37.2401 105.206 37.2433 105.048 37.2433C102.194 37.2433 100.372 36.1993 100.372 35.4818C100.372 34.7643 102.194 33.7203 105.048 33.7203C106.02 33.7203 106.872 33.8413 107.573 34.0292C107.932 33.7149 108.323 33.4397 108.741 33.2102ZM110.243 30.1974C107.389 30.1974 105.567 29.1534 105.567 28.4359C105.567 27.7184 107.389 26.6743 110.243 26.6743C113.097 26.6743 114.918 27.7184 114.918 28.4359C114.918 29.1534 113.097 30.1974 110.243 30.1974Z" fill="#5410D4"/>
+                                    <path d="M111.8 36.2692V39.3462M111.8 42.4231V39.3462M111.8 39.3462H114.733H108.867" stroke="white" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </a>
                             </g>
                             <g clip-path="url(#clip1_425_1453)">
                             <g clip-path="url(#clip2_425_1453)">
@@ -167,12 +180,14 @@
                             </svg>
                     </div>
                 </li>
+                <li class="blank"></li>
                 <li>
                     <a href="#!" class="f__menu__item">
                         <span class="f__menu__icon"><img src="./assets/img/promotion-icon.svg" /></span>
                         <p class="f__menu_name">Menu</p>
                     </a>
                 </li>
+                <li class="blank"></li>
                 <li>
                     <a href="#!" class="f__menu__item">
                         <span class="f__menu__icon"><img src="./assets/img/user-icon.svg" /></span>

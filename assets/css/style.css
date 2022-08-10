@@ -17,7 +17,7 @@ ul[role='list'], ol[role='list'] {list-style: none;}
 html:focus-within {scroll-behavior: smooth;}
 
 /* Set core body defaults */
-body {min-height: 100vh;text-rendering: optimizeSpeed;line-height: 1.2;background-color: #fafafa;overflow-y: scroll;}
+body {min-height: 100vh;text-rendering: optimizeSpeed;line-height: 1.2;overflow-y: scroll;}
 
 body::-webkit-scrollbar {
 	width: 0;
@@ -337,6 +337,12 @@ footer {
     position: relative;
 }
 
+.footer__menu li.blank {
+	background-color: #ffffff;
+	position: relative;
+    z-index: 1;
+}
+
 .f__menu__item {
 	padding: 10px;
 	background-color: #ffffff;
@@ -377,9 +383,9 @@ footer {
 .f__menu__item:hover {
 	position: relative;
 	background-color: transparent;
-	background-image: url('../img/footer-hover-bg.svg');
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTIiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA5MiA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ2IDI5QzU2LjA4MzcgMjkgNjQuOTY1MyAyMy44NTM1IDcwLjE2MTUgMTYuMDQzOEM3NS4zNjI0IDguMjI3MDYgODIuNjExMiAwIDkyIDBWNjBIMFYwQzkuMzg4ODQgMCAxNi42Mzc2IDguMjI3MDcgMjEuODM4NSAxNi4wNDM4QzI3LjAzNDcgMjMuODUzNSAzNS45MTYzIDI5IDQ2IDI5WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100.5%;
 	isolation: isolate;
     z-index: 1;
 }
@@ -474,5 +480,14 @@ footer {
 /* /footer end */
 
 /* @media queries start */
-
+@media (min-width: 768px) {
+	.footer__menu li.blank {
+		flex-basis: 12%;
+	}
+}
+@media (max-width: 500px) {
+	.footer__menu li.blank {
+		display: none;
+	}
+}
 /* @media queries end */
